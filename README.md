@@ -2,7 +2,7 @@
 
 
 ------------------------
-### based on [buddydeeps/dockerandroid](https://github.com/Deepsin/docker-android)
+### based on [buddydeeps/docker-android](https://github.com/Deepsin/docker-android)
 - Android
     + APIs: android-19,android-20,android-21,android-22,android-23,android-24,android-25,android-26,android-27,android-28
     + Build-Tools: 28.0.2
