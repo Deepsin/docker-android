@@ -14,21 +14,21 @@
 -------------------------
 
 ### Pull from Docker Hub
-docker pull buddydeeps/dockerandroid:latest
+docker pull buddydeeps/docker-android:latest
 
 -------------------------
 
 ### Build from GitHub
-docker build -t buddydeeps/dockerandroid https://github.com/Deepsin/docker-android
+docker build -t buddydeeps/docker-android https://github.com/Deepsin/docker-android
 
 -------------------------
 ### Run image
-docker run -it buddydeeps/dockerandroid bash
+docker run -it buddydeeps/docker-android bash
 
 -------------------------
 
 ### Use as base image
 ```Dockerfile
-FROM buddydeeps/dockerandroid:latest
+FROM buddydeeps/docker-android:latest
 ```
 -------------------------
