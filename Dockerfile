@@ -1,5 +1,5 @@
 FROM buddydeeps/dockerandroid
-MAINTAINER Deepam Palaniswami <buddydeeps@gmail.com>
+
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/tools_r25.2.5-linux.zip" \
     ANDROID_BUILD_TOOLS_VERSION=28.0.2 \
     ANDROID_APIS="android-19,android-20,android-21,android-22,android-23,android-24,android-25,android-26,android-27,android-28" \
@@ -7,8 +7,11 @@ ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/tools_r25.2.5-linu
     MAVEN_HOME="/usr/share/maven" \
     GRADLE_HOME="/usr/share/gradle" \
     ANDROID_HOME="/opt/android"
+    
 ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
+
 WORKDIR /opt
+
 RUN dpkg --add-architecture i386 && \
     apt-get -qq update && \
     apt-get -qq install -y wget curl maven ant gradle libncurses5:i386 libstdc++6:i386 zlib1g:i386 && \
