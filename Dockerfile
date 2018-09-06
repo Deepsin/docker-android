@@ -1,6 +1,6 @@
-FROM beevelop/java
+FROM buddydeeps/docker-android
 
-MAINTAINER Maik Hummel <m@ikhummel.com>
+MAINTAINER Deepam Palaniswami
 
 ENV ANDROID_SDK_URL="https://dl.google.com/android/repository/tools_r25.2.5-linux.zip" \
     ANDROID_BUILD_TOOLS_VERSION=27.0.0 \
